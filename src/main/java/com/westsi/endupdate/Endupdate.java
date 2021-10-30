@@ -28,7 +28,7 @@ public class Endupdate implements ModInitializer {
 
 
         RegistryKey<ConfiguredFeature<?, ?>> oreWoolOverworld = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY,
-                new Identifier("tutorial", "ore_wool_overworld"));
+                new Identifier("endupdate", "ore_wool_overworld"));
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, oreWoolOverworld.getValue(), ORE_WOOL_OVERWORLD);
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, oreWoolOverworld);
 
